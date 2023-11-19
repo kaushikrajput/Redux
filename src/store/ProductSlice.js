@@ -31,7 +31,8 @@ export function fetchProducts() {
     dispatch(setStatus(STATUSES.LOADING));
 
     try {
-      const res = await fetch("https://fakestoreapi.com/products");
+      const res = await fetch(" https://api.escuelajs.co/api/v1/products");
+      console.log(res);
       const data = await res.json();
       dispatch(setProducts(data));
       dispatch(setStatus(STATUSES.IDLE));

@@ -1,8 +1,9 @@
 import React, { useEffect } from "react";
-import { add } from "../store/cartSlice";
+import { add } from "../../store/cartSlice";
 import { useDispatch, useSelector } from "react-redux";
-import { fetchProducts } from "../store/ProductSlice";
-import { STATUSES } from "../store/ProductSlice";
+import { fetchProducts } from "../../store/ProductSlice";
+import { STATUSES } from "../../store/ProductSlice";
+import './products.scss'
 
 const Products = () => {
   const dispatch = useDispatch();
@@ -36,12 +37,12 @@ const Products = () => {
   }
 
   return (
-    <div className="productsWrapper">
+    <div className="products">
       {products.map((product) => (
         <div className="card" key={product.id}>
-          <img src={product.image} alt="" />
-          <h4>{product.title}</h4>
-          <h5>{product.price}</h5>
+          <img src={product.images} alt="" />
+          <p>{product.title}</p>
+          <p>${product.price}</p>
           <button className="btn" onClick={() => handleAdd(product)}>
             Add to cart 
           </button>

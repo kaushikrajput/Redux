@@ -1,11 +1,10 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
-import Navbar from "./components/Navbar";
-import Home from "./pages/Home";
-import Cart from "./pages/Cart";
+import Navbar from "./components/Navbar/Navbar";
+import Home from "./pages/Home/Home";
+import Cart from "./pages/Cart/Cart";
 import { Provider } from "react-redux";
 import store from "./store/store";
-
 
 const App = () => {
   return (

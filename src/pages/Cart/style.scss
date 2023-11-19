@@ -1,0 +1,47 @@
+.cart {
+  h2 {
+    margin: 40px 0;
+  }
+  .cart-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    margin: 0 50px 20px 50px;
+    padding: 14px;
+    border-radius: 5px;
+
+    img {
+      height: 100px;
+      width: 85px;
+    }
+    .btn {
+      text-transform: uppercase;
+      border: none;
+      outline: none;
+      background: #764abc;
+      padding: 8px 10px;
+      color: #fff;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .btn:hover {
+      background: #513282;
+    }
+  }
+}
+@media only screen and (max-width: 768px) {
+  .cart .cart-card {
+    margin: 0;
+
+    img {
+      margin: 0 5px 0 0;
+    }
+    .btn {
+      margin: 0 0 0 10px;
+    }
+  }
+}
