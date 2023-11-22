@@ -1,0 +1,33 @@
+.empty-cart {
+  background: #fff;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      max-width: 700px;
+      width: 100%;
+      height: auto;
+    }
+
+    button {
+      border: 1px solid transparent;
+      background-color: #764abc;
+      color: #fff;
+      font-weight: 400;
+      border-color: #764abc;
+      font-size: 16px;
+      padding: 8px 10px;
+      border-radius: 4px;
+      text-align: center;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+    }
+    .btn:hover {
+      background: #513282;
+    }
+  }
+}

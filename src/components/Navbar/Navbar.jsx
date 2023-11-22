@@ -4,7 +4,7 @@ import { useSelector } from "react-redux";
 import "./navbar.scss";
 
 const Navbar = () => {
-  const items = useSelector((state) => state.cart);
+  const {cart} = useSelector((state) => state.cart);
 
   return (
     <div className="navbar">
@@ -15,7 +15,7 @@ const Navbar = () => {
       <div className="">
         <Link className="nav-link" to="/cart">
           Cart
-          <span className="cart-count">{items.length}</span>
+          <span className="cart-count">{cart?.length}</span>
         </Link>
       </div>
     </div>

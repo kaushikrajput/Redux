@@ -6,7 +6,7 @@ const Home = () => {
     return (
         <div>
             <section className='home'>
-                <h2>Products</h2>
+                {/* <h2>Products</h2> */}
                 <Products />
             </section>
         </div>
