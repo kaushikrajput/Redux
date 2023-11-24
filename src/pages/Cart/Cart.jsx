@@ -37,8 +37,8 @@ const Cart = () => {
         {/* <h2>Cart</h2> */}
         {products?.cart?.map((product, index) => (
           <div className="cart-card" key={index}>
-            <img src={product.images} alt="" />
-            <p>{product.title}</p>
+            <img src={product.image} alt="" />
+            <p>{product.title.slice(0,20)}</p>
             <p>${product.price}</p>
             <div className="quantity">
               <button onClick={() => reduceproduct(product)}>

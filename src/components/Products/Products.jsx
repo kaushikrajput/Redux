@@ -8,6 +8,8 @@ import './products.scss'
 const Products = () => {
   const dispatch = useDispatch();
 
+  // const title = product?.title.slice(0, 20);
+
   const { data: products, status } = useSelector((state) => state.product);
 
   //const [products, setProducts] = useState([]);
@@ -40,8 +42,8 @@ const Products = () => {
     <div className="products">
       {products.map((product) => (
         <div className="card" key={product.id}>
-          <img src={product.images} alt="" />
-          <p>{product.title}</p>
+          <img src={product.image} alt="" />
+          <p>{product.title.slice(0,20)}</p>
           <p>${product.price}</p>
           <button className="btn" onClick={() => handleAdd(product)}>
             Add to cart 
